@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+}
+.container-fluid{/*toglie i bordi*/
+    overflow: hidden;
+    padding: 0;
+}
+#TastoLogOut{
+    width: auto ;
+    height: auto ; 
+    background-color: #e64141d3;; /* colore azzurro più scuro al passaggio del mouse */
+    border-color: #000000;
+}
+#TastoLogOut:hover{
+    width: auto ;
+    height: auto ; 
+    background-color: #e90b0bd3;; /* colore azzurro più scuro al passaggio del mouse */
+    border-color: #000000;
+}
+#logo{
+    width: 150px;
+    height: auto;
+}
+#barra_nav{
+   /* background-color: #ffffff!important;*/
+    background-color: #4bc2797a!important;
+}
+
+#griglia1x3{
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr 6fr 1fr; /* 3 colonne */
+    grid-template-areas: "first_col second_col third_col" /* aree delle celle della prima riga */
+}  
+#first_col{
+    grid-area: first_col;
+}
+#second_col{
+    grid-area: second_col;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+#third_col{
+    grid-area: third_col;
+}
+
+#rettangolo_viaggio{
+    width: 100%;
+    height:auto; 
+    background-color: #e1e9e4 ;
+    border: 5px solid #51be7b90;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    
+    padding: 20px;
+}
+
+.campo_testo{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: black;
+    outline: none;
+    text-align : center;
+}

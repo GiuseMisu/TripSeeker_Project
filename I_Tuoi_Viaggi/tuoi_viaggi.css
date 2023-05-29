@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+}
+.container-fluid{/*toglie i bordi brutti*/
+    overflow: hidden;
+    padding: 0;
+}
+
+#logo{
+    width: 150px;
+    height: auto;
+}
+#barra_nav{
+    background-color: #51be7b7d!important;
+}
+
+#griglia1x3{
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr 6fr 1fr; /* 3 colonne */
+    grid-template-areas: "first_col second_col third_col" /* aree delle celle della prima riga */
+}  
+#first_col{
+    grid-area: first_col;
+    /*background-color: white; */
+}
+#second_col{
+    grid-area: second_col;
+    /*background-color: white;*/
+    padding-left: 60px;
+    padding-right: 60px;
+}
+#third_col{
+    grid-area: third_col;
+    /*background-color: white;*/
+}
+
+#rettangolo_viaggio{
+    width: 100%;
+    height:auto; 
+    background-color: #e1e9e4;
+    border: 5px solid #51be7b90;
+    padding: 20px;
+}
+
+.campo_testo{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: black;
+    outline: none;
+    text-align : center;
+}
+
+/**freccia in basso e alto animate*/
+.fa-angle-double-down {
+    position: relative;
+    animation-name: moveUpDown_giu;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.fa-angle-double-up {
+    position: relative;
+    animation-name: moveUpDown_su;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes moveUpDown_giu {
+    from {
+    top: 0px;
+    }
+    to {
+    top: 10px;
+    }
+}
+
+@keyframes moveUpDown_su {
+    from {
+    top: 5px;
+    }
+    to {
+    top: 15px;
+    }
+}
+/**********/
+
+/**bottoni ordinamento**/
+ .verdi{
+    background-color: #51be7b!important;
+    border-color: #51be7b!important;
+}
+/**********/
+
+/**barra ricerca**/
+input[type="search"]:focus {/*tolgo bordo quando premo sulla barra*/
+    box-shadow: none;
+}
+/**********/
+
+
+
