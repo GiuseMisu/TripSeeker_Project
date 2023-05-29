@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+}
+.container-fluid{/*toglie i bordi brutti*/
+    overflow: hidden;
+    padding: 0;
+}
+#griglia1x3{
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr 6fr 1fr; /* 3 colonne */
+    grid-template-areas: "first_col second_col third_col" /* aree delle celle della prima riga */
+}        
+#second_col{
+    background-color: #4bc27959;
+    border-radius: 10px;
+}
+h1{
+    text-align: center;
+    color: #000000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h2{
+    text-align: center;
+    color: #000000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#tasto_login{
+    width: auto ;
+    height: auto ; 
+    background-color: #81c1ec59; /* colore azzurro più scuro al passaggio del mouse */
+    border-color: #000000;
+}
+#tasto_login:hover{
+    width: auto ;
+    height: auto ; 
+    background-color: #00d9ae; /* colore azzurro più scuro al passaggio del mouse */
+    border-color: #000000;
+}
+h4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+a:visited {/*cosi se lo hai visitato non cambia di colore*/
+    color: rgb(3, 3, 3);
+}
+a{
+    color: rgb(3, 3, 3);
+    text-decoration: none;/*toglie linea sottolineata*/
+}
+#div_sotto_barra{
+    height: 200px;
+    width: auto;
+    background-image: url("../img/beach-alone-relax-summer-aerial-view-ios-10-stock-1920x1200-5393.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 85%;
+}
+#logo{
+    width: 150px;
+    height: auto;
+}
+
+#barra_nav{
+    /* background-color: #ffffff!important;*/
+    background-color: #51be7b7d!important;
+ }
+
+ /*parte login popup*/
+.container {
+padding: 2rem 0rem;
+}
+
+@media (min-width: 576px) {
+.modal-dialog {
+    max-width: 400px;
+}
+.modal-dialog .modal-content {
+    padding: 1rem;
+}
+}
+.modal-header .close {
+margin-top: -1.5rem;
+}
+
+.form-title {
+margin: -2rem 0rem 2rem;
+}
+
+.btn-round {
+border-radius: 3rem;
+}
+
+.delimiter {
+padding: 1rem;
+}
+
+.social-buttons .btn {
+margin: 0 0.5rem 1rem;
+}
+
+.signup-section {
+padding: 0.3rem 0rem;
+}
+

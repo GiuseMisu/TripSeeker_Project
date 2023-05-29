@@ -1,0 +1,170 @@
+
+        body{
+            margin: 0;
+            font-family: 'Work Sans', sans-serif;
+        }
+        .container-fluid{/*toglie i bordi brutti*/
+            overflow: hidden;
+            padding: 0;
+        }
+
+        #tasto_login{
+            width: auto ;
+            height: auto ; 
+            background-color: #4bc27921; /* colore azzurro più scuro al passaggio del mouse */
+            border-color: #000000;
+        }
+        #tasto_login:hover{
+            width: auto ;
+            height: auto ; 
+            background-color: #00d9ae; /* colore azzurro più scuro al passaggio del mouse */
+            border-color: #000000;
+        }
+        #logo{
+            width: 150px;
+            height: auto;
+        }
+            
+        #barra_nav{
+            background-color: #51be7b7d!important;
+        }
+        
+        #griglia1x3{
+            display: grid;
+            height: auto;
+            grid-template-columns: 1fr 6fr 1fr; /* 3 colonne */
+            grid-template-areas: "first_col second_col third_col" /* aree delle celle della prima riga */
+        } 
+
+        
+
+
+       
+
+       
+/*parte login popup*/
+        .container {
+            padding: 2rem 0rem;
+        }
+
+        @media (min-width: 576px) {
+        .modal-dialog {
+            max-width: 400px;
+        }
+        .modal-dialog .modal-content {
+            padding: 1rem;
+        }
+        }
+        .modal-header .close {
+            margin-top: -1.5rem;
+        }
+
+        .form-title {
+            margin: -2rem 0rem 2rem;
+        }
+
+        .btn-round {
+            border-radius: 3rem;
+        }
+
+        .delimiter {
+            padding: 1rem;
+        }
+
+        .social-buttons .btn {
+            margin: 0 0.5rem 1rem;
+        }
+
+        .signup-section {
+            padding: 0.3rem 0rem;
+        }
+
+        /*stile della croce di chiusura popup*/
+        button[aria-label="Close"] {
+            position: absolute; 
+            top: 5%;
+            left: 95%;
+            transform: translate(-50%, -50%);
+            padding: 0;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+
+        button[aria-label="Close"] i {
+            color: #333333;
+            font-size: 20px;
+        }
+
+        button[aria-label="Close"]:hover i {
+            color: #ff0000;
+        }
+/************/
+
+        #div_sotto_barra{
+            height: 50px;
+            background-color: #ffffff;
+        }
+        #div_sotto_faq{
+            height: 50px;
+            background-color: #ffffff;
+        }
+      
+/* footer */
+        
+        footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: #4bc2797a;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .social, .info, .contacts {
+        flex: 1 1 30%;
+        margin-bottom: 10px;
+        }
+
+        .social h3, .info h3, .contacts h3 {
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+        }
+
+        .social ul, .info ul, .contacts ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        }
+
+        .social li, .info li, .contacts li {
+        margin-bottom: 5px;
+        }
+
+        .social a, .info a, .contacts a {
+        color: #333;
+        text-decoration: none;
+        }
+
+        .map {
+        margin-top: 10px;
+        }
+
+        iframe {
+        width: 100%;
+        height: 200px;
+        }
+
+        /* media query per dispositivi con larghezza inferiore a 600px */
+        @media (max-width: 600px) {
+        footer {
+            flex-direction: column;
+        }
+        }
+        @media (min-width: 601px) {
+        footer > hr {
+            display: none;
+            margin-top: none;
+        }
+        }
+/************/
